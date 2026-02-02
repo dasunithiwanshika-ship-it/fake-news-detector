@@ -5,7 +5,6 @@ A machine learning project to detect fake news using TF-IDF and Word2Vec
 
 A machine learning project for detecting fake news articles using natural language processing (NLP) techniques. This project implements multiple classification models, compares their performance, and considers ethical implications in automated fake news detection.
 
----
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -18,12 +17,11 @@ A machine learning project for detecting fake news articles using natural langua
 - [Future Improvements](#future-improvements)
 - [References](#references)
 
----
 
 ## Introduction
 With the rapid spread of online information, distinguishing real news from fake news is increasingly important. This project builds a tool to automatically classify news articles as real or fake using machine learning models and NLP techniques.
 
----
+
 
 ## Dataset
 - **Source:** WELFake dataset (combined from Kaggle, CI-FAKE, FakeNewsNet, and genuine news articles from Reuters & The Guardian)
@@ -36,7 +34,7 @@ With the rapid spread of online information, distinguishing real news from fake 
 
 > **Note:** Full dataset is not included due to size. You can download it from the [Kaggle WELFake dataset link](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset). A small sample CSV is included for testing purposes.
 
----
+
 
 ## Preprocessing
 - Handling missing values: removed rows with missing text, filled missing titles
@@ -47,7 +45,7 @@ With the rapid spread of online information, distinguishing real news from fake 
   - **TF-IDF** (primary)
   - **Word2Vec embeddings** (alternative approach)
 
----
+
 
 ## Models
 Implemented using **scikit-learn**:
@@ -61,7 +59,7 @@ Implemented using **scikit-learn**:
 
 - Hyperparameters tuned using GridSearchCV or manual search.
 
----
+
 
 ## Evaluation
 Metrics used: Accuracy, Precision, Recall, F1-Score, and AUC (where applicable)
@@ -76,7 +74,7 @@ Metrics used: Accuracy, Precision, Recall, F1-Score, and AUC (where applicable)
 
 - **Observation:** TF-IDF consistently outperformed Word2Vec embeddings for this dataset.
 
----
+
 
 ## Ethical Considerations
 - **Bias:** Models may favor mainstream news sources or political topics
@@ -86,7 +84,7 @@ Metrics used: Accuracy, Precision, Recall, F1-Score, and AUC (where applicable)
   - False Negative (fake → real): misinformation spreads
 - **Mitigation:** Balanced model parameters, feature importance analysis, class imbalance auditing
 
----
+
 
 
 
